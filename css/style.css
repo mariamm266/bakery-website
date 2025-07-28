@@ -1,0 +1,258 @@
+html{
+        scroll-behavior:smooth ;
+}
+body{
+    font-family:"Alegreya Sans", sans-serif;
+
+}
+body p{
+    font-size: 17px;
+    color: #686868;
+     line-height: 1.86em;
+}
+h2, h4{
+    font-family:"Alegreya", serif; 
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+h4{
+    font-size: 22px;
+}
+
+/* .navbar{
+    position: fixed;
+    background-color: transparent;
+    z-index: 3;
+} */
+/* .nav-link{
+    color: white;
+    transition: all 1s;
+
+} */
+.nav-item a{
+    color: white;
+    font-size: 1.2rem;
+    margin: 8px;
+}
+.nav-item a:hover {
+  color: #8e7754;
+}
+
+.navbar {
+  background-color: white;
+  position: static;
+}
+.navbar-collapse {
+  background-color: white;
+}
+
+.navbar-toggler-icon.black {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler-icon.white {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#home {
+    position: relative;
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+}
+#home .homeContent{
+    z-index: 2;
+    position: relative;
+    height: 100vh;
+    color: white;
+}
+.homeContent h1{
+    font-family: "Alegreya", serif;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); 
+  z-index: 1;
+}
+
+.content{
+    text-align: center;
+    margin: auto;
+    color: white;
+
+}
+.content h1{
+    font-size: 4rem;
+}
+.content p{
+    font-size: 1rem;
+}
+.btns{
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 4px;
+    transition: all 0.5s;
+    font-weight: 700;
+    width: 20%;
+}
+.btns:hover{
+    background-color:white;
+    color: black;
+}
+.btn1{
+    background-color: #8e7754;
+    border-color: #8e7754;
+}
+.mouse{
+    width: 33px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.582);
+    border-radius: 50px;
+    background-color: transparent;
+    margin: auto;
+    position: relative;
+}
+.dot{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    animation: dotMotion 2s infinite;
+}
+@keyframes dotMotion {
+  0%{
+    top: 15%;
+    opacity: 0;
+  }
+  30%{
+    top: 15%;
+    opacity: 0;
+  }
+  33%{
+    opacity: 1;
+  }
+  100%{
+    top: 70%;
+    opacity: 0;
+  }
+}
+.about-icon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, .15);;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  #8e7754;
+    background-color: white;
+}
+
+#location , #contact{
+    background-color: #f8f8f8;
+}
+.contact-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #8e7754;
+}
+
+.foot1{
+    background-color: #403d38;
+}
+.foot1 h4{
+    color: white;
+    font-size: 18px;
+    font-family:"Alegreya", serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.foot1 p{
+    color: #969696;
+    font-size: 16px;
+    line-height: 1.86em;
+}
+.foot1 li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 5px;
+}
+.cont-detail{
+    position: relative;
+}
+.cont-detail::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../images/contact-details-map.png) no-repeat center center;
+    opacity: 0.11;
+}
+.foot2{
+    background-color: #353330;
+}
+.foot2 img{
+    width: 30%;
+}
+.foot2 p{
+    color: #777;
+    font-size:1rem;
+}
+.foot2 .ico{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid #484540;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8c8a86;
+    background-color: #484540;
+    transition: all 0.5s;
+    
+}
+
+.ico:hover{
+    color: white;
+}
+.icons a{
+    text-decoration: none;
+    color: inherit;
+}
+.face:hover{
+    background-color:#0165E1;
+    border-color:	#0165E1 ;
+}
+.google:hover{
+    background-color:#db4a39 ;
+    border-color:#db4a39 ;
+}
+.linked:hover{
+    background-color: #0A66C2;
+    border-color: #0A66C2;
+}
+.twitter:hover{
+    background-color: #1DA1F2;
+    border-color: #1DA1F2;
+}
+

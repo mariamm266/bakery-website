@@ -1,0 +1,55 @@
+ /* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 390px) {
+ .foot2 img{
+    width: 100%;
+}
+.btns{
+    width: 40%;
+}
+.nav-item a{
+    color: black;
+}
+.navbar-brand{
+    width: 180px;
+    height: 60px;
+}
+.navbar-toggler-icon.black {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) { 
+   .foot2 img{
+    width: 30%;
+}
+.btns{
+    width: 20%;
+}
+.nav-item a{
+    color: white;
+}
+.navbar-collapse {
+  background-color: inherit;
+}
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) { 
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
